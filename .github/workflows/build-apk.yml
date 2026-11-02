@@ -24,7 +24,8 @@ jobs:
 
     - name: Build APK with Flet
       run: |
-        flet pack main.py --ios --android --name "BaarnamaCommercial" --product "Commercial Fleet"
+        flet pack main.py --android --name "BaarnamaCommercial" --product-name "Commercial Fleet"
+
 
     - name: Upload APK artifact
       uses: actions/upload-artifact@v4
