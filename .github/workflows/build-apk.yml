@@ -24,10 +24,10 @@ jobs:
 
     - name: Build APK with Flet
       run: |
-        echo "y" | flet build apk
+        flet pack main.py --name BaarnamaCommercial
 
     - name: Upload APK artifact
       uses: actions/upload-artifact@v4
       with:
         name: app-release-apk
-        path: build/apk/app-release.apk
+        path: dist/*.apk
