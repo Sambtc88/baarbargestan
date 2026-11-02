@@ -24,7 +24,7 @@ jobs:
 
     - name: Build APK with Flet
       run: |
-        flet build apk
+        flet build apk -y
 
     - name: Upload APK artifact
       uses: actions/upload-artifact@v4
