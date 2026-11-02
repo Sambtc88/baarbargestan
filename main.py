@@ -225,8 +225,7 @@ async def main(page: ft.Page):
                 license_user,
                 license_pass,
                 login_error,
-
-              ft.ElevatedButton("ورود به برنامه", width=280, on_click=verify_commercial_license),
+                ft.ElevatedButton("ورود به برنامه", width=280, on_click=verify_commercial_license),
                 ft.Text("تست ورود: نام کاربری admin / رمز 1234", size=12, color=ft.colors.GREY_500)
             ], horizontal_alignment=ft.CrossAxisAlignment.CENTER, alignment=ft.MainAxisAlignment.CENTER),
             alignment=ft.alignment.center,
@@ -234,4 +233,5 @@ async def main(page: ft.Page):
         )
     )
 
-ft.app(target=main)
+ft.run(main)
+
